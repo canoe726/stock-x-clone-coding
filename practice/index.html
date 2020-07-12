@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1><a href="#">Sneaker x Tech</a></h1>
+            </div>
+            <nav>
+                <span><a href="#">Browse</a></span>
+                <span><a href="#">News</a></span>
+                <span><a href="#">About</a></span>
+                <span><a href="#">Help</a></span>
+                <span><a href="#">Login</a></span>
+                <span><a href="#">Sign Up</a></span>
+                <span class="sell"><a href="#">Sell</a></span>
+            </nav>
+        </header>
+        
+        <div class="content-header">
+            <div class="home-panel">
+                <div>
+                    <h1>
+                        <div class="top">Buy & Sell</div>
+                        <div class="bottom">Authentic Sneakers</div>
+                    </h1>
+                    <div class="search-row">
+                        <button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                        <input id="home-search" type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button class="content active" onclick="changeHomeContent(this);">Sneaker</button>
+            <button class="content" onclick="changeHomeContent(this);">Streetwear</button>
+            <button class="content" onclick="changeHomeContent(this);">Collectibles</button>
+            <button class="content" onclick="changeHomeContent(this);">Handbags</button>
+            <button class="content" onclick="changeHomeContent(this);">Watches</button>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="image/nike_banner.png">
+            </div>
+            <div class="slide fade">
+                <img src="image/adidas_banner.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="image/nike_banner.png">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="slideshow-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="content-center">
+            <div class="home-nav">
+                <div>
+                    <div class="nav-header">
+                        <span class="left">Popular Brands</span>
+                        <span class="right"><a href="#">See All</a></span>
+                    </div>
+                    <div class="nav-content">
+                        <span><img id="nav-img-cards" src="image/adidas_banner.jpg"></span>
+                        <span><img id="nav-img-cards" src="image/nike_banner.png"></span>
+                        <span><img id="nav-img-cards" src="image/adidas_banner.jpg"></span>
+                        <span><img id="nav-img-cards" src="image/nike_banner.png"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-nav">
+                <div>
+                    <div class="nav-header">
+                        <span class="left">Most Popular 
+                            <i class="far fa-question-circle">
+                                <span class="tooltiptext">Popular Sneakers</span>
+                            </i>
+                        </span>
+                        <span class="right"><a href="#">See All</a></span>
+                    </div>
+                    <div class="nav-cards">
+                        <div class="card">
+                            <img id="nav-img-cards" src="image/nike4.jpg">
+                            <div class="nav-card-content">
+                                <div class="model">Jordan1</div>
+                                <div>Lowest Price</div>
+                                <div class="price">130$</div>
+                                <div class="trade">150 Sold</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img id="nav-img-cards" src="image/nike5.jpg">
+                            <div class="nav-card-content">
+                                <div class="model">Jordan2</div>
+                                <div>Lowest Price</div>
+                                <div class="price">120$</div>
+                                <div class="trade">150 Sold</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img id="nav-img-cards" src="image/nike4.jpg">
+                            <div class="nav-card-content">
+                                <div class="model">Jordan3</div>
+                                <div>Lowest Price</div>
+                                <div class="price">150$</div>
+                                <div class="trade">150 Sold</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img id="nav-img-cards" src="image/nike5.jpg">
+                            <div class="nav-card-content">
+                                <div class="model">Jordan4</div>
+                                <div>Lowest Price</div>
+                                <div class="price">170$</div>
+                                <div class="trade">150 Sold</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-row">
+                <a id="browse-button" href="#">Browse Hundreds of Sneakers on Live MarketPlace</a>
+            </div>
+            
+            <div class="news-row">
+                <div>
+                    <div class="nav-header">
+                        <span class="left">Sneaker News</span>
+                        <span class="right"><a href="#">See All</a></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="news-item"><p><a href="#">The Drop List 7.1.20</a></p> <p>Morgan Baylis - 07/02/2020</p></li>
+                            <li class="news-item"><p><a href="#">Chuck Taylor: A Brief History</a></p> <p>Morgan Baylis - 07/02/2020</p></li>
+                            <li class="news-item"><p><a href="#">COVID-19 Latest Update</a></p> <p>StockX - 07/01/2020</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="release-calendar">
+                <div>
+                    <div class="nav-header">
+                        <span class="left">Sneaker Calendar</span>
+                        <span class="right"><a href="#">See All</a></span>
+                    </div>
+
+                    <div class="div-table">
+                        <div class="row">
+                            <div class="cell">
+                                <div id="table-card" class="card">
+                                    <img id="nav-img-cards" src="image/nike4.jpg">
+                                    <div class="nav-card-content">
+                                        <div class="date">Jun 1 <i class="far fa-plus-square"></i></div>
+                                        <div class="model">Jordan1</div>
+                                        <div class="price">130$</div>
+                                        <div class="view"><a href="#">View Release</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div id="table-card" class="card">
+                                    <img id="nav-img-cards" src="image/nike4.jpg">
+                                    <div class="nav-card-content">
+                                        <div class="date">Jun 1 <i class="far fa-plus-square"></i></div>
+                                        <div class="model">Jordan1</div>
+                                        <div class="price">130$</div>
+                                        <div class="view"><a href="#">View Release</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div id="table-card" class="card">
+                                    <img id="nav-img-cards" src="image/nike4.jpg">
+                                    <div class="nav-card-content">
+                                        <div class="date">Jun 1 <i class="far fa-plus-square"></i></div>
+                                        <div class="model">Jordan1</div>
+                                        <div class="price">130$</div>
+                                        <div class="view"><a href="#">View Release</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div id="table-card" class="card">
+                                    <img id="nav-img-cards" src="image/nike4.jpg">
+                                    <div class="nav-card-content">
+                                        <div class="date">Jun 1 <i class="far fa-plus-square"></i></div>
+                                        <div class="model">Jordan1</div>
+                                        <div class="price">130$</div>
+                                        <div class="view"><a href="#">View Release</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <ul>
+                    <li class="title"><a href="#">NIKE</a></li>
+                    <li><a href="#">NIKE 1</a></li>
+                    <li><a href="#">NIKE 2</a></li>
+                    <li><a href="#">NIKE 3</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="title"><a href="#">ADIDAS</a></li>
+                    <li><a href="#">ADIDAS 1</a></li>
+                    <li><a href="#">ADIDAS 2</a></li>
+                    <li><a href="#">ADIDAS 3</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="title"><a href="#">JORDAN</a></li>
+                    <li><a href="#">JORDAN 1</a></li>
+                    <li><a href="#">JORDAN 2</a></li>
+                    <li><a href="#">JORDAN 3</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="title"><a href="#">OHTERS</a></li>
+                    <li><a href="#">PUMA</a></li>
+                    <li><a href="#">ASICS</a></li>
+                    <li><a href="#">CONVERSE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <button id="scroll-top" onclick="scrollTopFunc()"><i class="fas fa-arrow-up"></i></button>
+
+        <script src="main.js"></script>
+    </body>
+</html>
+
